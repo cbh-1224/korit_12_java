@@ -18,7 +18,7 @@ package ch06_loops;
     ****       각 라인마다 별의 개수가 달라진다면 어떻게 통제해야 하는가?
     *****
  */
-public class Loop07Star {
+public class Loop07Star1 {
     public static void main(String[] args) {
 
         for (int i = 0; i < 5; i++) {

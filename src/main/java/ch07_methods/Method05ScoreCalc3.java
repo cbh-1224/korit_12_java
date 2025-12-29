@@ -2,7 +2,7 @@ package ch07_methods;
 
 import java.util.Scanner;
 
-public class Method04ScoreCalc2 {
+public class Method05ScoreCalc3 {
     // method 정의 영역 이전의 메서드03에서 정의한 방식은 하나의 메서드에 총합을 구하는 메서드와
     // 평균을 구하는 메서드가 합쳐져 있었습니다.
 
@@ -12,10 +12,10 @@ public class Method04ScoreCalc2 {
     // 그리고 메서드 호출 영역에는 '평균을 구하는 메소드'만 호출할겁니다.
 
     // 1. 합을 구하는 메서드
-    public static double calcSum(int num, Scanner scanner) {
-        double sum = 0;
-
-        for (int i = 0; i < num; i++) {
+    public static double calcSum(int numOfsubs) {
+        double sum = 0; // 지역변수 sum 선언 및 초기화
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 0; i < numOfsubs; i++) {
             System.out.print((i + 1) + " 과목의 점수를 입력하세요: ");
             sum += scanner.nextDouble();
         }
@@ -24,15 +24,19 @@ public class Method04ScoreCalc2 {
     //2. 평균을 구하는 메서드
     public static void calcAvg() {
         Scanner scanner = new Scanner(System.in);
+        // 사용할 변수 선언
+        int numOfsubs = 0;
+        double avgScore = 0;
         System.out.print("몇 개의 과목을 입력하시겠습니까?: ");
-        int numOfsubs = scanner.nextInt();
-
-        double sum = calcSum(numOfsubs, scanner);
-        System.out.println("총합은 " + sum + "이며, 평균은 " + (sum / numOfsubs) + "입니다.");
+        numOfsubs = scanner.nextInt(); // 이건 Java 내장 method를 호출한 경우
+        double sum = calcSum(numOfsubs); // method 내에서 사용자 정의 method를 호출하는 것이 가능합니다.
+        avgScore = sum / numOfsubs;
+        System.out.println("총합은 " + sum + "이며, 평균은 " + avgScore + "입니다.");
     }
 
     public static void main(String[] args) {
         // method 호출 영역
         calcAvg();
+
     }
 }

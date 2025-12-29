@@ -12,7 +12,7 @@ package ch06_loops;
            **
             *
  */
-public class Loop09Star {
+public class Loop09Star3 {
     public static void main(String[] args) {
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < (5 - i) - 1; j++) {
@@ -33,5 +33,6 @@ public class Loop09Star {
             }
             System.out.println();
         }
+
     }
 }

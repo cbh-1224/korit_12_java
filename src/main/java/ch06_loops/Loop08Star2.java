@@ -16,7 +16,7 @@ import java.util.Scanner;
     **
     *
  */
-public class Loop08Star {
+public class Loop08Star2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("몇 줄의 별을 생성하시겠습니까?: ");

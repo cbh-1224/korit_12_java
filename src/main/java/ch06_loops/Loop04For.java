@@ -45,7 +45,5 @@ public class Loop04For {
             j++;
         }
         System.out.println(sum2);
-
-
     }
 }

@@ -22,5 +22,6 @@ public class Main {
         System.out.println(example.defaultVar);
 //        System.out.println(example.privateVar); // private 접근 제어자이기 때문에 오류 발생합니다. field의 직접 조회 불가능
         System.out.println(example.getPrivateVar());
+
     }
 }

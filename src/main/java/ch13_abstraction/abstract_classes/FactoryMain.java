@@ -51,7 +51,7 @@ public class FactoryMain {
             직접적으로 정의되지 않은 메서드를 호출하고 원하는 결과값을 얻을 수 있다.
 
             만약 부모 클래스에 showInfo() 메서드가 있는 걸 몰랐다면
-            PhoneFactory 클래스에 별개의 showInfo() 메서드를 따로 정의했을테니까요.0
+            PhoneFactory 클래스에 별개의 showInfo() 메서드를 따로 정의했을테니까요.
          */
     }
 }

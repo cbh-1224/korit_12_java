@@ -12,6 +12,5 @@ public class BookMain {
 
         ebook1.showInfo();
 
-
     }
 }

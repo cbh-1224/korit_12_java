@@ -1,4 +1,4 @@
-package chinterface;
+package ch13_abstraction.interfaces;
 
 public class ChannelUpBotton extends Button{
 

@@ -117,28 +117,8 @@ public class CentralControl {
     // downcasting 관련 - 즉 Power[]의 내부 element의 고유 메서드 호출
     public void performSpecificMethod() {
         for (Power device : deviceArray) {
-            if (device instanceof AirConditioner) {
-                AirConditioner airConditioner = (AirConditioner) device;
-                airConditioner.changeMode();
-            } else if (device instanceof Computer) {
-                Computer computer = (Computer) device;
-                computer.compute();
-            } else if (device instanceof LED) {
-                LED led = (LED) device;
-                led.changeColor();
-            } else if (device instanceof Mouse) {
-                Mouse mouse = (Mouse) device;
-                mouse.leftClick();
-            } else if (device instanceof Printer) {
-                Printer printer = (Printer) device;
-                printer.print();
-            } else if (device instanceof Speaker) {
-                Speaker speaker = (Speaker) device;
-                speaker.changeEqual();
-            } else if (device == null) {
-                System.out.println("연결되어 있지 않습니다.");
-            } else {
-                System.out.println("아직 지원되지 않는 기기입니다.");
+            if (device != null) {
+                device.perform();
             }
         }
     }

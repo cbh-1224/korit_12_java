@@ -14,6 +14,11 @@ public class LED implements Power{
         System.out.println("LED를 끕니다.");
     }
 
+    @Override
+    public void perform() {
+        changeColor();
+    }
+
     public void changeColor() {
         System.out.println("조명의 색깔을 바꿉니다.");
     }

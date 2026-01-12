@@ -12,6 +12,11 @@ public class Speaker implements Power{
         System.out.println("스피커를 끕니다.");
     }
 
+    @Override
+    public void perform() {
+        changeEqual();
+    }
+
     public void changeEqual() {
         System.out.println("스피커의 이퀄라이저를 변경합니다.");
     }

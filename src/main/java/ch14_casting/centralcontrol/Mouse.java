@@ -13,6 +13,11 @@ public class Mouse implements Power{
         System.out.println("마우스를 끕니다.");
     }
 
+    @Override
+    public void perform() {
+        leftClick();
+    }
+
     public void leftClick() {
         System.out.println("마우스 왼쪽 클릭");
     }

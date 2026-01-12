@@ -12,6 +12,11 @@ public class Printer implements Power{
         System.out.println("프린터를 끕니다.");
     }
 
+    @Override
+    public void perform() {
+        print();
+    }
+
     public void print() {
         System.out.println("프린터가 인쇄를 합니다.");
     }

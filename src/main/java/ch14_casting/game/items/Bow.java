@@ -1,4 +1,4 @@
-package game.items;
+package ch14_casting.game.items;
 
 public class Bow implements Weapon{
 
